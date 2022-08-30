@@ -14,7 +14,7 @@ Visit `localhost:8000/index.html`
 - run `create_canvas.sh`
 
 ### `create_canvas.sh`
-Usage: `./create_canvas.sh [canvas_name] [frames_dir] [output_dir]
+Usage: `./create_canvas.sh [canvas_name] [frames_dir] [output_dir]`
 
 The script does a few things:
 1. turn frames into an mp4
@@ -28,5 +28,5 @@ The script does a few things:
 - MP4 format
 
 ## TODO
-[ ] dynamic way to turn on the capture, so it's not running in the background
-[ ] use node.js http server
+- [ ] dynamic way to turn on the capture, so it's not running in the background
+- [ ] use node.js http server
