@@ -25,8 +25,8 @@ function draw() {
     const yLowerLimit = 0 - borderOverlap
 
     // make a x and y grid of ellipses
-    let xMod = 50 * scale // 10 and 50
-    let yMod = 50 * scale // 10 and 50
+    let xMod = 10 * scale // 10 and 50
+    let yMod = 10 * scale // 10 and 50
     let h = random(0, 100);
     for (let x = xLowerLimit; x <= xUpperLimit; x = x + xMod) {
         for (let y = yLowerLimit; y <= yUpperLimit; y = y + yMod) {
