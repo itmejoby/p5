@@ -1,9 +1,15 @@
 let t = 0; // time variable
 
+let fps = 60
+let w = 1440
+let h = 2560
+let scale = w / 600 // original implemntation was 450 width
+
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(w, h);
+    frameRate(fps);
     noStroke();
-    fill(40, 200, 40);
+    fill(40, 120, 80); // 40, 80, 120 and 40, 120, 80 and 80, 80, 80
 }
 
 function draw() {
@@ -12,8 +18,8 @@ function draw() {
     xBase = width / 2
     yBase = height / 2
 
-    range = 50
-    increments = 10
+    range = 100 * scale
+    increments = 20 * scale
 
 
     // make a x and y grid of ellipses
@@ -32,28 +38,6 @@ function draw() {
             ellipse(myX, myY, 10); // draw particle
         }
     }
-
-
-    //   // starting point of each circle depends on mouse position
-    //   const xAngle = 0//map(mouseX, 0, width, -4 * PI, 4 * PI, true);
-    //   const yAngle = 0//map(mouseY, 0, height, -4 * PI, 4 * PI, true);
-    //   // and also varies based on the particle's location
-    //   const angle = xAngle * (x / width) + yAngle * (y / height);
-
-    //   // each particle moves in a circle
-    //   const myX = x + 20 * cos(2 * PI * t + angle);
-    //   const myY = y + 20 * sin(2 * PI * t + angle);
-
-    //   ellipse(myX, myY, 10); // draw particle
-
-
-    //   // and also varies based on the particle's location
-    //   angle2 = 30 * (x / width) + 10 * (y / height);
-
-    //   // each particle moves in a circle
-    //   myX2 = x + 20 * cos(2 * PI * t + angle2);
-    //   myY2 = y + 20 * sin(2 * PI * t + angle2);
-    //   ellipse(myX2, myY2, 10)
 
     t = t + 0.01; // update time
 }
