@@ -29,4 +29,7 @@ The script does a few things:
 
 ## TODO
 - [ ] dynamic way to turn on the capture, so it's not running in the background
+    - like a button next to save to start / stop easier. maybe it changes some boolean "record" flag
+- [ ] way to pass a script to a general capture script
 - [ ] use node.js http server
+- [ ] create_canvas.sh but create_short.sh (constant loop instead of reverse)
